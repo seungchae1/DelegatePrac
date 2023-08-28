@@ -42,6 +42,8 @@ namespace DelegatePrac
             // 3. 람다를 활용한 구현 방법2
             products.Sort((x, y) => x.Price.CompareTo(y.Price));
 
+            products.ForEach(p =>  Console.WriteLine(p));
+
             //출력
             foreach (var item in products)
             {
